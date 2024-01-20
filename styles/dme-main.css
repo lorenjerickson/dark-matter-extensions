@@ -1,0 +1,450 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Orbitron:wght@400;700&family=Stick+No+Bills:wght@200;300;400;500;600;700;800&display=swap');
+
+/* --------------------------------
+    variables
+   -------------------------------- */
+:root {
+    /* colors */
+    --main-color: rgb(6, 152, 151);
+    --bright-color: rgb(2, 199, 199);
+    --dark-color:rgb(11, 20, 66);
+    --dark-alt-color: rgb(20, 90, 120);
+    --glow-color: rgb(6, 203, 210);
+    --misc-a-color: rgb(78, 88, 88);
+    --bg-block: rgba(0, 0, 150, 0.5);
+    /* fonts */
+    --font-primary: "Open Sans", sans-serif;
+	--font-h1: "Orbitron", sans-serif;
+	--font-h2: "Stick No Bills", sans-serif;
+}
+
+/**** Logo and Pause Spinner Styling ****/
+#pause {
+    background: none;
+}
+
+#pause img {
+    content: url("../images/spinner.webp");
+    color: #412017;
+    width: 180px;
+    height: 180px;
+    top: -50px;
+    left: calc(50% - 90px);
+    opacity: 0.65;
+	--fa-animation-duration: 7s;
+
+}
+
+#pause figcaption {
+    font-family: var(--font-h2);
+    font-size: 52px;
+    text-shadow: 0px 3px 5px var(--bg-block);
+    color: var(--dark-color);
+}
+
+/*
+#logo {
+    content: url("../images/dm-logo.webp");
+    width: 200px;
+        height: 56px;
+}
+
+#navigation{
+        margin-left: 85px;
+}
+*/
+
+/* --------------------------------
+    journal sheet changes
+   -------------------------------- */
+
+/*.content-link .inline-roll {
+  text-indent: 0;
+}*/
+
+/*use <div class=box-right> to make a floating box of text on the right hand side of a journal entry */
+.journal-sheet .box-right p {
+  text-indent: 5px; 
+  margin-bottom: 1px;
+}
+
+.journal-sheet .box-right {
+  float: right;
+  width: 250px;
+  font-size: smaller;
+  border: 2px dashed var(--dark-color);
+  padding: 2px 1px 2px 5px;
+  background-image: url('../images/bg_tile_sq.webp');
+}
+/*end*/
+
+.journal-sheet form { /* I think this is wrong? */
+  font-family: var(--font-primary);
+  background-color: white;
+  background-image: url('../images/journal_bg_tile.webp');
+}
+
+.journal-sheet h1 {
+  font-family: var(--font-h1);
+  border-bottom: 2px solid var(--bright-color);
+}
+
+.journal-sheet h2 {
+  font-family: var(--font-h2);
+  border-bottom: 2px solid var(--dark-alt-color); 
+}
+
+.journal-sheet h3, 
+.journal-sheet h4 {
+  font-family: var(--font-h2);
+}
+
+/* remove image borders */
+.journal-sheet img {
+  border: 0px;
+}
+
+/* set input and button glow color */
+.journal-sheet input[type=text],
+.journal-sheet select:focus,
+.journal-sheet button:hover {
+  box-shadow: 0 0 5px var(--main-color) !important;
+}
+
+.journal-sheet form.editable a {
+  text-shadow: 0 0 8px var(--main-color) !important;
+  border-color: var(--bright-color);
+  text-indent: 0;
+}
+
+.journal-sheet .window-header {
+  background-color: var(--dark-color) !important;
+}
+
+.sheet.journal-entry .journal-entry-content {
+  background-image: url('../images/journal_bg_tile.webp');
+}
+
+.sheet.journal-entry .journal-entry-content .journal-entry-pages p {
+  text-indent: 1rem; /*indent <p>aragraphs in journal entries*/
+  margin: 0 0 0.5em 0; /*trying without top 0.5em margin. Just a bottom margin */
+}
+
+a.content-link, a.inline-roll {
+  text-indent: 0;
+}
+
+/* -------------------------------
+    charactor sheet changes
+   ------------------------------- */
+.dnd5e.sheet.actor.character {
+  min-width: 720px;
+  min-height: 750px;
+}
+
+.dnd5e.sheet.actor.character ul.skills-list {
+  flex: 0 0 212px;
+  height: 510px;
+}
+
+.actor.character form {
+    background-image: url('../images/char-sheet-bg-tile-sm.webp');
+}
+
+.actor.character form ul.skills-list,
+.actor.character form li.attribute.resource {
+    background-image: url('../images/bg_tile_sq.webp');
+}
+
+.actor.character input:hover[type=text],
+.actor.character input:hover[type=number] {
+    box-shadow: 0 0 5px var(--main-color) !important;
+}
+
+.actor.character a.item.active {
+    border-bottom: 3px solid var(--main-color) !important;
+    color: black !important;
+}
+
+.actor.character .item.active,
+.actor.character a:hover,
+.actor.character a:focus,
+.actor.character button:hover,
+.actor.character li:hover h4 {
+    text-shadow: 0 0 8px var(--main-color) !important;
+}
+
+.actor.character h4.rollable:hover {
+    text-shadow: 0 0 8px var(--main-color) !important;
+}
+
+.actor.character [data-tab="biography"] textarea {
+    background-image: url('../images/bg_tile_sq.webp');
+}
+
+.actor.character textarea:focus {
+    outline: 2px solid var(--dark-color) !important;
+    box-shadow: 0 0 5px var(--main-color) !important;
+}
+
+.actor.character .window-header {
+    background-color: var(--header-color);
+}
+
+/* --------------------------------
+    npc sheet changes
+   -------------------------------- */
+.dnd5e.sheet.actor.npc {
+  min-width: 600px;
+  min-height: 750px;
+}
+
+.dnd5e.sheet.actor.npc ul.skills-list {
+  flex: 0 0 212px;
+  height: 510px;
+}
+
+.actor.npc form {
+    background-image: url('../images/bg_tile_sq.webp');
+}
+
+.actor.npc img.profile {
+    background-color: var(--bg-block);
+}
+
+.actor.npc input:hover[type=text],
+.actor.npc input:hover[type=number] {
+    box-shadow: 0 0 5px var(--main-color) !important;
+}
+
+.actor.npc a.item.active {
+    border-bottom: 3px solid var(--main-color) !important;
+    color: black !important;
+}
+
+.actor.npc .item.active,
+.actor.npc a:hover,
+.actor.npc a:focus,
+.actor.npc button:hover,
+.actor.npc li:hover h4 {
+    text-shadow: 0 0 8px var(--main-color) !important;
+}
+
+/* --------------------------------
+    general styling
+   -------------------------------- */
+
+/* custom hotbar */
+#custom-hotbar .macro:hover {
+    box-shadow: 0 0 10px var(--main-color) inset !important;
+}
+
+a[href] {
+    color: var(--main-color) !important;
+
+}
+
+a:hover {
+    text-shadow: 0 0 8px var(--bright-color) !important;
+}
+
+/* -----------------------------------------
+    Scrollbar
+   ----------------------------------------- */
+::-webkit-scrollbar-thumb {
+    outline: none;
+    border-radius: 3px;
+    background: var(--dark-alt-color) !important;
+    border: 1px solid var(--main-color) !important;
+}
+
+:root {
+    scrollbar-width: thin;
+    scrollbar-color: var(--dark-alt-color) #111 !important;
+}
+
+/* -----------------------------------------
+    Player Config UI
+   ----------------------------------------- */
+#player-config .directory-item.context {
+    border-top: 1px solid var(--bright-color) !important;
+    border-bottom: 1px solid var(--main-color) !important;
+    box-shadow: 0 0 10px var(--main-color) !important;
+}
+
+/* -----------------------------------------
+    Connected Players UI
+   ----------------------------------------- */
+#players ol .player.context {
+    margin: -1px 0;
+    border-top: 1px solid var(--main-color) !important;
+    border-bottom: 1px solid var(--main-color) !important;
+}
+
+#players ol .player.context .player-name {
+    text-shadow: 0 0 5px var(--bright-color) !important;
+}
+
+/* ----------------------------------------
+    Form Inputs
+   ---------------------------------------- */
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    box-shadow: 0 0 5px var(--bright-color) !important;
+}
+
+select:focus {
+    box-shadow: 0 0 5px var(--bright-color) !important;
+}
+
+textarea:focus {
+    box-shadow: 0 0 6px var(--bright-color) !important;
+}
+
+button:hover,
+button:focus {
+    box-shadow: 0 0 5px var(--bright-color) !important;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    background: var(--dark-color) !important;
+
+}
+
+input[type=range]::-moz-range-thumb {
+    background: var(--dark-color) !important;
+
+}
+
+/* -----------------------------------------
+    Tabbed Containers
+   ----------------------------------------- */
+.tabs .item.active {
+    text-shadow: 0 0 10px var(--bright-color) !important;
+}
+
+/* -----------------------------------------
+    File Picker
+   ----------------------------------------- */
+.filepicker .directory>li:hover {
+    text-shadow: 0 0 5px var(--bright-color) !important;
+}
+
+.filepicker .tiles-list li.picked {
+    box-shadow: 0 0 6px inset var(--main-color) !important;
+}
+
+.filepicker .display-modes a.active {
+    text-shadow: 0 0 6px var(--main-color) !important;
+}
+
+/* ----------------------------------------
+    Token HUD
+   ---------------------------------------- */
+#token-hud .status-effects .effect-control.overlay {
+    border: 1px solid var(--main-color) !important;
+}
+
+/* ----------------------------------------
+    Chat Bubbles
+   ---------------------------------------- */
+#navigation #nav-toggle:hover {
+    text-shadow: 0 0 10px var(--main-color) !important;
+}
+
+#navigation #scene-list .scene.view,
+#navigation #scene-list .scene.context {
+    border: 1px solid var(--bright-color) !important;
+    border-bottom: 1px solid var(--main-color) !important;
+    box-shadow: 0 0 10px var(--main-color) !important;
+}
+
+/* -----------------------------------------
+    Main Menu
+   ----------------------------------------- */
+#menu #menu-items li:hover {
+    text-shadow: 0 0 10px var(--main-color) !important;
+}
+
+/* ----------------------------------------- */
+/*  Scene Controls
+  /* ----------------------------------------- */
+#controls .scene-control.active,
+#controls .control-tool.active,
+#controls .scene-control:hover,
+#controls .control-tool:hover {
+    border: 1px solid var(--bright-color) !important;
+    border-bottom: 1px solid var(--main-color) !important;
+    box-shadow: 0 0 10px var(--main-color) !important;
+}
+
+#controls .control-tool:hover {
+    border-bottom: 1px solid var(--main-color) !important;
+    box-shadow: 0 0 10px var(--main-color) !important;
+}
+
+/* ----------------------------------------
+    Hotbar
+   ---------------------------------------- */
+#hotbar .macro:hover {
+    box-shadow: 0 0 10px var(--main-color) inset !important;
+    border: 1px solid var(--main-color) !important;
+}
+
+/* ----------------------------------------
+    PRIMARY SIDEBAR
+   ---------------------------------------- */
+#sidebar-tabs {
+    border-bottom: 1px solid var(--main-color) !important;
+    box-shadow: 0 0 10px var(--bright-color) !important;
+}
+
+#sidebar-tabs>.item.active {
+    border: 1px solid var(--bright-color) !important;
+    box-shadow: 0 0 6px inset var(--main-color) !important;
+}
+
+.directory .directory-list .directory-item.folder .context {
+    background-color: transparent !important;
+    border-color: var(--main-color) !important;
+}
+
+.directory .directory-list .directory-item.context,
+.directory .directory-list .directory-item.active {
+    border-color: var(--main-color) !important;
+}
+
+#sidebar.collapsed #sidebar-tabs>.item.active {
+    border-bottom: 1px solid var(--bright-color) !important;
+}
+
+/* -----------------------------------------
+    Folders and Sub-folders
+   ----------------------------------------- */
+li.folder.droptarget>header h3 i {
+    text-shadow: 0 0 4px var(--bright-color) !important;
+}
+
+/* -----------------------------------------
+    1.0 - Chat Panel
+   ----------------------------------------- */
+.notification-pip {
+    color: var(--main-color) !important;
+}
+
+/* -----------------------------------------
+    3.0 - Scenes Directory
+   ----------------------------------------- */
+#scenes .scene.context,
+#scenes .scene.active {
+    box-shadow: 0 0 10px var(--main-color) !important;
+}
+
+.window-header {
+    background-color: var(--header-color);
+}
+

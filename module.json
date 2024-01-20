@@ -1,0 +1,79 @@
+{
+  "id": "dark-matter-extensions",
+  "title": "Dark Matter Extensions",
+  "description": "Add Dark Matter features to the Foundry VTT DND5E system.",
+  "authors": [
+    {
+      "name": "CSMcFarland",
+      "discord": "CSMcFarland#6471",
+      "url": "https://gitlab.com/csmcfarland",
+      "flags": {}
+    },
+    {
+      "name": "Android8675",
+      "discord": "Android8675#9424",
+      "email": "66xakfaar@relay.firefox.com",
+      "url": "https://gitlab.com/Android8675",
+      "flags": {}
+    }
+  ],
+  "version": "2.0.1",
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10.290",
+    "maximum": "11"
+  },
+  "scripts": [
+    "/scripts/dm-planet.js"
+  ],
+  "esmodules": [
+    "/esmodules/dme-main.js"
+  ],
+  "styles": [
+    "/styles/dme-main.css",
+    "/styles/dm-planet.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
+      "flags": {}
+    }
+  ],
+  "url": "https://gitlab.com/dark-matter1/dme",
+  "manifest": "https://gitlab.com/api/v4/projects/27171046/packages/generic/dme/2.0.1/module.json",
+  "download": "https://gitlab.com/api/v4/projects/27171046/packages/generic/dme/2.0.1/dme.zip",
+  "readme": "README.md",
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+        "compatibility": {
+          "verified": "1.6.3",
+          "maximum": "2.4.1"
+        }
+      }
+    ],
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "manifest": "https://github.com/ruipin/fvtt-lib-wrapper/releases/latest/download/module.json",
+        "compatibility": {}
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "macro",
+      "label": "Dark Matter Extension Macros",
+      "path": "packs/macro",
+      "private": true,
+      "type": "Macro",
+      "flags": {}
+    }
+  ]
+}
