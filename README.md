@@ -1,6 +1,6 @@
 ## Notice Regarding Foundry v9
 
-[Version 1.5.x of the Dark Matter Extensions (dme)](https://gitlab.com/dark-matter1/dme/-/releases/1.5.0)
+[Version 1.5.x of the Dark Matter Extensions (dme)](https://github.com/lorenjerickson/dark-matter-extensions)
 is the LAST version(s) to support Foundry v9. If you are running Foundry v10+, then you'll want to look
 for a version of dme that starts at v2.x
 
@@ -8,10 +8,10 @@ If you are still running v9 of Foundry, you can use this manifest to install the
 that works with v9 of Foundry VTT:
 
 ```
-https://gitlab.com/api/v4/projects/27171046/packages/generic/dme/1.5.0/module.json
+https://raw.githubusercontent.com/lorenjerickson/dark-matter-extensions/main/module.json
 ```
 
-If you have questions or problems, feel free to use the [Issues](https://gitlab.com/dark-matter1/dme/-/issues)
+If you have questions or problems, feel free to use the [Issues](https://github.com/lorenjerickson/dark-matter-extensions/issues)
 area in gitlab to make a report, or reach out to us on the MHP Discord.
 
 ![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https%3A%2F%2Fgitlab.com%2Fdark-matter1%2Fdme%2Fraw%2Fmaster%2Fmodule.json) ![Game System](https://img.shields.io/endpoint?url=https%3A%2F%2Ffoundryshields.com%2Fsystem%3FnameType%3Dfoundry%26url%3Dhttps%3A%2F%2Fgitlab.com%2Fdark-matter1%2Fdme%2Fraw%2Fmaster%2Fmodule.json)
@@ -40,7 +40,7 @@ with other add-ons. You'll be prompted to install it when you install DME.
 
 ## Installation
 Copy the manifest link into the Install Module > Manifest URL field to install.
-* Manifest: https://gitlab.com/dark-matter1/dme/raw/master/module.json
+* Manifest: https://raw.githubusercontent.com/lorenjerickson/dark-matter-extensions/main/module.json
 
 ## Contributors
 Thank you for those who found, fixed bugs, added new content, or just tried this out to 

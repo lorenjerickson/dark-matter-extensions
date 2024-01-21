@@ -1,5 +1,5 @@
 {
-  "id": "dark-matter-extensions",
+  "id": "dme",
   "title": "Dark Matter Extensions",
   "description": "Add Dark Matter features to the Foundry VTT DND5E system.",
   "authors": [
@@ -14,6 +14,12 @@
       "discord": "Android8675#9424",
       "email": "66xakfaar@relay.firefox.com",
       "url": "https://gitlab.com/Android8675",
+      "flags": {}
+    },
+    {
+      "name": "lorenjerickson",
+      "email": "lorenjerickson@gmail.com",
+      "url": "https://github.com/lorenjerickson",
       "flags": {}
     }
   ],
@@ -41,9 +47,8 @@
       "flags": {}
     }
   ],
-  "url": "https://gitlab.com/dark-matter1/dme",
-  "manifest": "https://gitlab.com/api/v4/projects/27171046/packages/generic/dme/2.0.1/module.json",
-  "download": "https://gitlab.com/api/v4/projects/27171046/packages/generic/dme/2.0.1/dme.zip",
+  "url": "https://github.com/lorenjerickson/dark-matter-extensions",
+  "manifest": "https://raw.githubusercontent.com/lorenjerickson/dark-matter-extensions/main/module.json",
   "readme": "README.md",
   "relationships": {
     "systems": [
