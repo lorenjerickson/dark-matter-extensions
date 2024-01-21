@@ -38,7 +38,7 @@ export class DarkMatterShipSheet extends ActorSheet5eVehicle {
     if ( !game.user.isGM && this.actor.limited ) {
       return 'systems/dnd5e/templates/actors/limited-sheet.html';
     }
-    return `modules/dark-matter-extensions/templates/${this.actor.data.type}-sheet.html`;
+    return `modules/dme/templates/${this.actor.data.type}-sheet.html`;
   }
 }
 
